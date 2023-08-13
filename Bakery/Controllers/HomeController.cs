@@ -16,7 +16,7 @@ namespace Bakery.Controllers
         {
             _db = db;
         }
-        [HttpGet("/")]
+
         public ActionResult Index()
         {
             return View();
