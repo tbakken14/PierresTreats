@@ -1,8 +1,8 @@
-# _MealTime_
+# _Bakery 2.0_
 
-#### By _**Thomas Bakken, Elijah Cartwright**_
+#### By _**Thomas Bakken**_
 
-#### _A web application for meal planning._
+#### _A web application for Pierre's Sweet and Savory Treats._
 
 ## Technologies Used
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-_A website to track recipes and create meal plans and shopping lists._
+_This website makes use of identity to log users into the site and restrict privilidges if not signed in. Additionally, this website makes use of a ef core migrations and a many to many relationship._
 
 ## Setup/Installation Requirements
 
@@ -28,15 +28,18 @@ _A website to track recipes and create meal plans and shopping lists._
     * _Replace \[DB_NAME\] with a database name_
     * _Replace \[USERNAME\] with your MySQL username_
     * _Replace DB_NAME with your MySQL password_
-  * _Enter command: $ dotnet restore MealTime_
+  * _Enter command: $ dotnet restore Bakery_
   * _Initialize database with: $ dotnet ef database update_
-  * _Run application with command: $ dotnet run --project MealTime_
+  * _Run application with command: $ dotnet run --project Bakery_
 
 
 ## Known Bugs
+
+* Identity not yet implemented
+* Many to many not yet implemented
 
 ## License
 
 _MIT_
 
-Copyright (c) _8/8/2023_ _Thomas Bakken, Elijah Cartwright_
+Copyright (c) _8/8/2023_ _Thomas Bakken_
