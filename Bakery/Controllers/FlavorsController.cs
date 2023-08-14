@@ -16,43 +16,53 @@ namespace Bakery.Controllers
         {
             _db = db;
         }
+
         public ActionResult Index()
         {
-            return View();
+            List<Flavor> flavors = _db.Flavors.ToList();
+            return View(flavors);
         }
+
         public ActionResult Create()
         {
             return View();
         }
+
+        [HttpPost]
         public ActionResult Create(Flavor flavor)
         {
             _db.Flavors.Add(flavor);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         public ActionResult Details(int id)
         {
             Flavor flavor = _db.Flavors.FirstOrDefault(model => model.FlavorId == id);
             return View(flavor);
         }
+
         public ActionResult Update(int id)
         {
             Flavor flavor = _db.Flavors.FirstOrDefault(model => model.FlavorId == id);
             return View(flavor);
         }
 
+        [HttpPost]
         public ActionResult Update(Flavor flavor)
         {
             _db.Update(flavor);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         public ActionResult Delete(int id)
         {
             Flavor flavor = _db.Flavors.FirstOrDefault(model => model.FlavorId == id);
             return View(flavor);
         }
 
+        [HttpPost]
         public ActionResult Delete(Flavor flavor)
         {
             _db.Remove(flavor);

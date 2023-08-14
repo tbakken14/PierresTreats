@@ -1,0 +1,16 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Bakery.Models.Flavor
+@using Bakery.Models
+
+<h2>Flavors</h2>
+<hr>
+<h3>View Flavor</h3>
+
+<p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+
+@Html.ActionLink("Edit Flavor", "Update", new {id = Model.FlavorId})
+<br>
+@Html.ActionLink("Delete Flavor", "Delete", new {id = Model.FlavorId})
