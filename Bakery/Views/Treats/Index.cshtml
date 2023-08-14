@@ -1,0 +1,21 @@
+@{
+    Layout = "_Layout";
+}
+
+@using Bakery.Models
+
+<h2>Treats</h2>
+<hr>
+<h3>Treat Navigator</h3>
+
+@if (Model.Count == 0)
+{
+    <p>No treats</p>
+}
+@foreach (Treat treat in Model)
+{
+    <br>
+    @Html.ActionLink(treat.Name, "Details", new {id = treat.TreatId})
+}
+
+@Html.ActionLink("New Treat", "Create")
