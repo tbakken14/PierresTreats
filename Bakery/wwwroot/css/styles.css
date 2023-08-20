@@ -1,4 +1,36 @@
 body {
+    font-family: courier;
+    text-align: center;
     background-image: linear-gradient(30deg, rgb(145, 147, 132), 20%, rgb(252, 247, 227));
     height: 100vh;
+}
+
+.header {
+    background-color: rgb(145, 147, 132);
+    padding: 1vh 0vh;
+}
+.footer {
+    background-color: rgb(145, 147, 132);
+    padding: 5vh 0vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0vw;
+}
+
+.btn {
+    font-size: 2.2em;
+    font-weight: bold;
+    background-color: indianred;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: indianred;
+    opacity: 95%;
+}
+
+.btn:active:hover {
+    background-color: indianred;
+    opacity: 90%;
 }
