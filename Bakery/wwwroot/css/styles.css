@@ -8,7 +8,13 @@ body {
 .header {
     background-color: rgb(145, 147, 132);
     padding: 1vh 0vh;
+    margin: 0 0 1vh 0;
 }
+
+h1 {
+    font-weight: bolder;
+}
+
 .footer {
     background-color: rgb(145, 147, 132);
     padding: 5vh 0vh;
@@ -33,4 +39,10 @@ body {
 .btn:active:hover {
     background-color: indianred;
     opacity: 90%;
+}
+
+.image {
+    height: 55vh;
+    border-radius: 30px;
+    margin: 5vh 0;
 }
