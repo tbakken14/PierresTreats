@@ -11,6 +11,5 @@
 
 <p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
 
-@Html.ActionLink("Edit Treat", "Update", new {id = Model.TreatId})
-<br>
-@Html.ActionLink("Delete Treat", "Delete", new {id = Model.TreatId})
+@Html.ActionLink("Edit Treat", "Update", new {id = Model.TreatId}, new {@class="btn small"})
+@Html.ActionLink("Delete Treat", "Delete", new {id = Model.TreatId}, new {@class="btn small"})

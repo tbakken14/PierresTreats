@@ -15,6 +15,10 @@ h1 {
     font-weight: bolder;
 }
 
+h2 {
+    font-weight: bold;
+}
+
 .footer {
     background-color: rgb(145, 147, 132);
     padding: 5vh 0vh;
@@ -33,16 +37,29 @@ h1 {
 
 .btn:hover {
     background-color: indianred;
-    opacity: 95%;
+    opacity: 90%;
 }
 
 .btn:active:hover {
     background-color: indianred;
-    opacity: 90%;
+    opacity: 80%;
+}
+
+.small {
+    font-size: 1.2em;
 }
 
 .image {
     height: 55vh;
     border-radius: 30px;
     margin: 5vh 0;
+}
+
+.item {
+    background-color: rgb(255, 191, 191);
+    border-color: black;
+}
+
+.item:hover {
+    background-color: rgb(255, 164, 164);
 }

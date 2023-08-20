@@ -14,8 +14,8 @@
 }
 @foreach (Treat treat in Model)
 {
-    @Html.ActionLink(treat.Name, "Details", new {id = treat.TreatId})
+    @Html.ActionLink(treat.Name, "Details", new {id = treat.TreatId}, new {@class="btn small item"})
     <br>
 }
 
-@Html.ActionLink("New Treat", "Create")
+@Html.ActionLink("New Treat", "Create", "Treats", new {}, new {@class="btn small"})
