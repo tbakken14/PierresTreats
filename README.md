@@ -22,15 +22,16 @@ _This website makes use of identity to log users into the site and restrict priv
 * _Clone the repository_
 * _In the bash command line:_
   * _Navigate to the top-level directory_
+  * _Navigate into the project directory with: $ cd Bakery_
   * _Create `appsettings.json` with: $ touch appsettings.json_
     * _Open the file in a text editor and copy the following line_
       * _\{"ConnectionStrings": \{"DefaultConnection": "Server=localhost;Port=3306;database=\[DB_NAME\];uid=\[USERNAME\];pwd=\[PASSWORD\];"\}\}_
     * _Replace \[DB_NAME\] with a database name_
     * _Replace \[USERNAME\] with your MySQL username_
     * _Replace DB_NAME with your MySQL password_
-  * _Enter command: $ dotnet restore Bakery_
+  * _Enter command: $ dotnet restore_
   * _Initialize database with: $ dotnet ef database update_
-  * _Run application with command: $ dotnet run --project Bakery_
+  * _Run application with command: $ dotnet run_
 
 
 ## Known Bugs
