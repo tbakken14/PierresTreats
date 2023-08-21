@@ -1,0 +1,20 @@
+@model Bakery.Models.Flavor
+@using Bakery.Models
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Flavors</h2>
+<hr>
+<h3>Add an treat to: @Html.DisplayFor(model => model.Name)</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.FlavorId)
+
+    @Html.Label("Select treat")
+    @Html.DropDownList("TreatId")
+
+    <input type="submit" value="Add Treat" />
+}
