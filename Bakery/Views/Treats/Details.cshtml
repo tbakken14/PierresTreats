@@ -11,5 +11,16 @@
 
 <p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
 
+<h4>Flavors</h4>
+@if (@Model.TreatFlavors.Count == 0)
+{
+    <p>This treat does not have any flavors.</p>
+}
+@foreach (TreatFlavor treatFlavor in Model.TreatFlavors)
+{
+    <p>@treatFlavor.Flavor.Name</p>
+}
+
+@Html.ActionLink("Add Flavor", "AddFlavor", new {id = Model.TreatId}, new {@class="btn small"})
 @Html.ActionLink("Edit Treat", "Update", new {id = Model.TreatId}, new {@class="btn small"})
 @Html.ActionLink("Delete Treat", "Delete", new {id = Model.TreatId}, new {@class="btn small"})
