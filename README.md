@@ -12,6 +12,7 @@
 * _C#_
 * _MySQL_
 * _Entity Framework Core_
+* _Identity_
 
 ## Description
 
