@@ -43,6 +43,7 @@ namespace Bakery.Controllers
             return RedirectToAction("Index");
         }
 
+        [AllowAnonymous]
         public ActionResult Details(int id)
         {
             Flavor flavor = _db.Flavors
