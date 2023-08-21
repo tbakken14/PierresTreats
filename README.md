@@ -36,8 +36,7 @@ _This website makes use of identity to log users into the site and restrict priv
 
 ## Known Bugs
 
-* Identity not yet implemented
-* Many to many not yet implemented
+* Page overflow with too many items
 
 ## License
 
