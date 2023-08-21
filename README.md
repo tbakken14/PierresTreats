@@ -4,7 +4,7 @@
 
 #### _A web application for Pierre's Sweet and Savory Treats._
 
-![Website Layout Demonstration](Bakery/wwwroot/img/websiteDemo.jpg "Website Demonstration")
+![Website Layout Demonstration](Bakery/wwwroot/img/websiteDemo.png "Website Demonstration")
 
 ## Technologies Used
 
