@@ -4,6 +4,8 @@
 
 #### _A web application for Pierre's Sweet and Savory Treats._
 
+![alt text](Bakery/wwwroot/img/conor-brown-sqkXyyj4WdE-unsplash.jpg "Title")
+
 ## Technologies Used
 
 * _.NET_
